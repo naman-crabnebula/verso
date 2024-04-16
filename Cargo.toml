@@ -19,6 +19,22 @@ targets = [
   "x86_64-apple-darwin",
 ]
 
+[package.metadata.packager]
+name = "verso"
+product-name = "verso"
+identifier = "com.eu-browser.verso"
+version = "0.0.1"
+before-each-package-command = "cargo build --release"
+resources = [
+  "resources",
+  "demo.html"
+]
+icons=[
+  "resources/icons/icon256x256.png",
+  "resources/icons/icon.ico"
+]
+
+
 [features]
 default = []
 
