@@ -58,7 +58,7 @@ jobs:
         run: cargo install cargo-packager --locked
 
       - name: Build the App
-        run: cargo build --release --features packager
+        run: cargo build --release
 
       - uses: Swatinem/rust-cache@v2
 
@@ -101,7 +101,7 @@ jobs:
         run: cargo install cargo-packager --locked
 
       - name: Build the App
-        run: cargo build --release --features packager
+        run: cargo build --release
 
       - uses: Swatinem/rust-cache@v2
 
@@ -140,7 +140,7 @@ jobs:
         run: cargo install cargo-packager --locked
 
       - name: Build the App
-        run: cargo build --release --features packager
+        run: cargo build --release
 
       - uses: Swatinem/rust-cache@v2
 
